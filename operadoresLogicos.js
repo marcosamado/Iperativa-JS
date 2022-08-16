@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 
-//Operadores LOGICOS  and (&&) , or || , not (!)
+// Operadores LOGICOS  and (&&) , or || , not (!)
 
 let num = 1;
 let num2 = 2;
@@ -21,4 +21,4 @@ console.log(!num == num && num3 == num3);
 
 console.log(false||true);
 
-console.log("Gato" || "Perro" );
+console.log("Gato" && "Perro");

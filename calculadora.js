@@ -60,6 +60,7 @@ function problemaRosita(num) {
     }else {
         console.log("una de las condiciones no se cumple");
     }
+    
 };
 
 

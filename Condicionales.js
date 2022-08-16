@@ -14,17 +14,17 @@ const prompt = require("prompt-sync")({ sigint: true });
 //     console.log("hay que trabajar ROSITAAAAA");
 // }
 
-// if ternario
+// // if ternario
 
-let fruta = "naranja";
+// let fruta = "naranja";
 
-let resultado = fruta == "manzana"? "niceee": "uhhh le erraste";
+// let resultado = fruta == "manzana"? "niceee": "uhhh le erraste";
 
-console.log(resultado);
+// console.log(resultado);
 
 //if Switch
 
-let semaforo = "verde";
+let semaforo = prompt("Ingresa el color del semaforo: ");
 
 switch(semaforo){
     case "verde":
