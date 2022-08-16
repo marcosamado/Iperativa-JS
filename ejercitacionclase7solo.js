@@ -9,8 +9,11 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ● Si su edad es impar, decirle en cualquiera de los mensajes: "¿Sabías que tu
 // edad es impar?".
 
- let edad = 1 //(el número es a modo de ejemplo, podés cambiarlo o
+ let edad = prompt("Ingresa tu edad: ") //(el número es a modo de ejemplo, podés cambiarlo o
 // crear otras para tener varias pruebas)
+if (edad % 2 !=0){
+    console.log("Sabias que tu edad es impar?")
+}
 if (edad < 0) {
     console.log("Error, edad invalida. Por favor ingrese un número válido.")
     } else if (edad < 18 ) {
