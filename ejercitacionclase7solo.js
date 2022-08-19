@@ -11,7 +11,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 
  let edad = prompt("Ingresa tu edad: ") //(el número es a modo de ejemplo, podés cambiarlo o
 // crear otras para tener varias pruebas)
-if (edad % 2 !=0){
+if (edad % 2 !=0 && edad > 0){
     console.log("Sabias que tu edad es impar?")
 }
 if (edad < 0) {
@@ -25,3 +25,4 @@ if (edad < 0) {
     } else {
         console.log("Puede pasar al bar y tomar alcohol.")
     }
+
