@@ -42,7 +42,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ese era!", de lo contrario, debe imprimir "Lo siento, intenta
 // nuevamente!"
 
-let aleatorio = Math.round(Math.random()*10);
+let aleatorio = parseInt(Math.random()*10);
 let numUsuario = Number(prompt("Adivina el numero: "));
 
 if (aleatorio === numUsuario) {
