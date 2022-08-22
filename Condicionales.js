@@ -3,26 +3,26 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 // IF / else IF / else 
 
-// let clima = prompt("Ingresa el clima: ");
-// let dia = prompt("Que dia es hoy ");
+let clima = prompt("Ingresa el clima: ");
+let dia = prompt("Que dia es hoy ");
 
-// if (clima == "soleado" && dia == "sabado") {
-//     console.log("Ta lindo pa salir chone");
-// }else if (clima == "nublado" && dia == "domingo"){;
-//     console.log("hay que hacer cucharita");
-// }else {
-//     console.log("hay que trabajar ROSITAAAAA");
-// }
+if (clima == "soleado" && dia == "sabado") {
+    console.log("Ta lindo pa salir chone");
+}else if (clima == "nublado" && dia == "domingo"){;
+    console.log("hay que hacer cucharita");
+}else {
+    console.log("hay que trabajar ROSITAAAAA");
+}
 
-// // if ternario
+// if ternario
 
-// let fruta = "naranja";
+let fruta = "naranja";
 
-// let resultado = fruta == "manzana"? "niceee": "uhhh le erraste";
+let resultado = fruta == "manzana"? "niceee": "uhhh le erraste";
 
-// console.log(resultado);
+console.log(resultado);
 
-//if Switch
+// if Switch
 
 let semaforo = prompt("Ingresa el color del semaforo: ");
 
