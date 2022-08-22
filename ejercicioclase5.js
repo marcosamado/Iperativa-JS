@@ -1,62 +1,88 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
-function pulgadas(){
-    let pulg = prompt("Ingrese la medida en pulgadas: ");
-    return pulg * 2.54;
+// 1. Crear una función que convierta pulgadas en centímetros.
+
+// Recibe por parámetro pulgadas y retorna su equivalente en centímetros.
+
+// function conversionPulgCm(pulgadas){
+//     return pulgadas * 2.54;
+// }
+// console.log(conversionPulgCm(10));
+
+let conversionPulgCm = pulgadas => pulgadas * 2.54;
+
+console.log(conversionPulgCm(10));
+
+// Crear una función que recibe un string y lo convierte en una URL.
+// Ej: “pepito” es devuelto como “http://www.pepito.com”
+
+// function pagina(nombre){
+//     return "http://www." + nombre + ".com"
+// }
+// console.log(pagina("chonejo"));
+
+let pagina = nombre => "http://www." + nombre + ".com";
+console.log(pagina("entraaqui"));
+
+// Crear una función que recibe un string y devuelve la misma frase pero con
+// admiración.
+
+function saludo(frase){
+    return frase + "!!!!";
 }
-console.log(pulgadas() + " cm");
+console.log(saludo("HOLA COMO ANDAS"));
 
+// Crear una función que calcule la edad de los perros, considerando que 1 año
+// para nosotros son 7 de ellos.
 
-function texto(){
-    let url = prompt("ingrese el nombre para la pagina web: ");
-    return url;
+function edadPerro(anios) {
+    return anios * 7;    
 }
-let textoUrl = texto();
-console.log("su pagina web es http://www." + textoUrl + ".com");
+console.log(edadPerro(6));
 
+// Crear una función que calcule el valor de tu hora de trabajo, introduciendo tu
+// sueldo mensual como parámetro.
+// PD: considerá que tu mes de trabajo tiene 40 horas.
 
-function saludos(){
-    let frase = prompt("Ingrese su frase: ");
-    return frase;
-}
-let saludo = saludos();
-console.log("!" + saludo + "¡");
-
-function años() {
-    let edadHumana = prompt("ingresa la edad humana de tu mascota: ");
-    return edadHumana * 7;
-}
-console.log(años());
-
-function horaTrabajo() {
-    let sueldo = prompt("Ingresa tu sueldo: ");
+function valorHora(sueldo){
     return sueldo / 40;
 }
-console.log(horaTrabajo());
+console.log(valorHora(90000));
 
+// Crear la función calculadorIMC() que reciba la altura en metros y el peso en
+// kilogramos y calcule el IMC de una persona. Luego, ejecutar la función
+// probando diferentes valores.
 
-let esMultiplo = (a, b) => {
-    let resto = a % b;
-    return resto == 0;
+function calculadorIMC(altura,kilogramos){
+    return kilogramos / (altura*altura);
 }
-console.log(esMultiplo(10,5));
+console.log(calculadorIMC(1.90,88));
 
-function calculoPrecio() {
-    let precioSteam = prompt("Ingresa precio steam ");
-    // let precioStore = prompt("Ingresa precio Store ");
-    return precioSteam * 75 / 100 + + precioSteam;
+// Crear una función que recibe un string en minúscula, lo convierta a mayúsculas
+// y lo retorne.
+
+function mayuscula(frase){
+    return frase;
 }
-console.log(calculoPrecio());
+console.log(mayuscula("rigooooooooooooooooooo".toUpperCase()));
 
-let calculoArrow = (a,b,c) => a * b / c + + a;
+// Crear una función que recibe un parámetro y devuelve qué tipo de dato es ese
+// parámetro.
 
-console.log(calculoArrow(8285,75,100));
-
-function calculadoraIMC(altura,peso){
-    return peso/(altura*altura);
+function tipoDeDato(dato){
+    return typeof dato;
 }
+console.log(tipoDeDato(10));
 
-console.log(calculadoraIMC(1.91,88));
+// Crear una función que le pasamos el radio de un círculo y nos devuelve la
+// circunferencia.
+
+function circunferencia(radio){
+    let diametro = radio * 2;
+    return diametro * Math.PI ;
+}
+console.log(circunferencia(10));
+
 
 
 
