@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 
-let suma = (a,b) => (a + b);
+// let suma = (a,b) => (a + b);
 
 // let sumar = suma (parseInt(prompt("para suma ingrese valor A: ")),parseInt(prompt("para suma ingrese valor B: ")));
 
@@ -39,6 +39,10 @@ let dividir = (a,b) => a / b;
 // let generadorDePorcentaje = (difporcentaje,numero) => dividir(multiplicar(difporcentaje,100),numero);
 // console.log("el porcentaje generado es " + generadorDePorcentaje(45,150));
 
+function generadorDePorcentaje(difporcentaje,numero) {
+    return dividir(multiplicar(difporcentaje,100),numero);
+}
+console.log(generadorDePorcentaje(45,150));
 
 // SACAR PROMEDIO GENERAL
 // function calcularNota(nota1,nota2,nota3) {
@@ -54,14 +58,15 @@ let dividir = (a,b) => a / b;
 
 // hacer una funcion que me reciba un numero si es par y menor a 6 que muestre el mensaje "el numero es par y menor a 6" en caso contrario "una de la condiciones no se cumple";
 
-function problemaRosita(num) {
-    if(num < 6 && num % 2 == 0){
-        console.log("El numero es par y menor a 6");
-    }else {
-        console.log("una de las condiciones no se cumple");
-    }
-    
-};
+// function problemaRosita(num) {
+//     if(num < 6 && num % 2 == 0){
+//         console.log("El numero es par y menor a 6");
+//     }else {
+//         console.log("una de las condiciones no se cumple");
+//     }
+// };
+
+
 
 
 
