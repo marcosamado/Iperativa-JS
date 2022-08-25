@@ -61,6 +61,14 @@ let frase = "breaking bad rules!";
 console.log(frase.slice(10,12));
 console.log(frase.slice(-10));
 
+//length -------------- Retorna la cantidad de caracteres que tiene el string, inluidoslos espacios
+let texto = "Mad Med";
+console.log(texto.length); //------ retorna 7 caracteres incluyendo el espacio
+let arraytexto = ["mad", "manes", "man"];
+console.log(arraytexto.length); //---------- devuelve 3 elementos que tiene el array
+console.log(arraytexto[1].length);//----------- devuelve 5 (manes)
+
+
 
 
 
