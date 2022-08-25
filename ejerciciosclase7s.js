@@ -100,7 +100,92 @@ function totalSandwich(sandwich,tipoPan,que,tom,lec,ceb,mayo,mos){
     mos == true ? precio = precio + 5 :  precio
     return precio + precioPan;
 }
-console.log(totalSandwich("Pollo","Blanco",true,true,false,false,true,false));
+console.log(totalSandwich("Pollo","Blanco",true,true,true,true,true,true));
+
+// Crea una función llamada abrirParacaidas() que recibe dos parámetros: velocidad y
+// altura. La función deberá decirnos si el paracaídas debe abrirse teniendo en cuenta lo
+// siguiente:
+// La velocidad debe ser menor a 1000 km/h.
+// La altura debe ser mayor o igual a 2000 m y menor a 3000 m.
+
+
+function abrirParacaidas(velocidad,altura){
+    if(velocidad < 1000 && altura >= 2000 && altura < 3000) {
+        console.log("abrir paracaidas");
+    }else {
+        console.log("no lo abras todavia");
+    }
+};
+abrirParacaidas(800,2500);
+
+
+// Usando la estructura switch, crea un programa en el que si un usuario ingresa "casa",
+// "perro", "pelota", "árbol" o "genio", nos devuelva la misma palabra traducida al idioma
+// inglés.
+// En caso de que la palabra sea distinta a la esperada, mostrarle un mensaje que le
+// informe que la palabra ingresada es incorrecta.
+
+function stringUno(palabra){
+switch (palabra){
+    case "perro":
+        console.log("dog")
+        break;
+    case "pelota":
+        console.log("ball")
+        break;
+    case "arbol":
+        console.log("Tree");
+        break;
+    case "genio":
+        console.log("genius");
+        break;
+    case "casa":
+        console.log("House");
+        break;
+    default:
+        console.log("Palabra ingresada incorrecta");
+        break;
+    }
+    // return palabra;
+}
+stringUno("lala");
+
+// Usando la estructura switch, pedirle al usuario que valore la película que acaba de ver
+// según la siguiente escala:
+// Muy mala.
+// Mala.
+// Mediocre.
+// Buena.
+// Muy buena.
+// Acompaña cada valoración con un mensaje que indique si te lamentás o te alegrás
+// por su valoración.
+// Por ejemplo: "Calificaste la película como Muy Mala. Lo lamentamos mucho.".
+
+function valoracion(critica){
+    switch (critica){
+        case "muy mala":
+            console.log("Calificaste la película como Muy Mala. Lo lamentamos mucho.")
+            break;
+        case "mala":
+            console.log("Calificaste la película como Mala. Trataremos de mejrarla.")
+            break;
+        case "mediocre":
+            console.log("Calificaste la película como Mediocre. Mediocre vos gilum");
+            break;
+        case "buena":
+            console.log("Calificaste la película como Buena. Seguiremos mejorando");
+            break;
+        case "muy buena":
+            console.log("Calificaste la película como Muy buena. Nos alegra que te haya gustado");
+            break;
+        default:
+            console.log("Valor Invalido");
+            break;
+        }
+        // return critica;
+    }
+
+valoracion("muy mala");
 
 
 
