@@ -42,12 +42,64 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ese era!", de lo contrario, debe imprimir "Lo siento, intenta
 // nuevamente!"
 
-let aleatorio = parseInt(Math.random()*10);
-let numUsuario = Number(prompt("Adivina el numero: "));
+// let aleatorio = parseInt(Math.random()*10);
+// let numUsuario = Number(prompt("Adivina el numero: "));
 
-if (aleatorio === numUsuario) {
-    console.log("Felicitaciones, ese era!");
-} else {
-    console.log("Lo siento, intenta nuevamente!");
-};
-console.log(aleatorio);
+// if (aleatorio === numUsuario) {
+//     console.log("Felicitaciones, ese era!");
+// } else {
+//     console.log("Lo siento, intenta nuevamente!");
+// };
+// console.log(aleatorio);
+
+// Escribí un programa que imprima los números pares del 0 al
+// 100.
+
+// function numerosPares(){
+//     for(let i=0; i<=50; i++){
+//         console.log(i+i);
+//     } 
+// }
+// numerosPares();
+
+// Escribí un programa que itere sobre el arreglo nombres e
+// imprima cada uno en la consola: const nombres = ["Pedro",
+// "Pablo", "Maria", "Juan", "Diana"];
+
+
+// let nombres = ["Pedro","Pablo","Maria","Juan","Diana"];
+// function devolverMayuscula(nombres){
+//     for (let i= 0; i<=4; i++){
+//         console.log(nombres[i].toUpperCase()); 
+//     }
+// }
+// devolverMayuscula(nombres);
+
+// Construí un pseudocódigo que permita ingresar un número, si
+// el número es mayor de 500, se debe calcular y mostrar en
+// pantalla el 18% de este.
+
+// ingresar un numero X ---  si X > 500 --   x * 18 / 100 = 
+
+// function veremos(x) {
+//     if (x > 500){
+//         x=  (x * 18) / 100;
+//     }else {
+
+//     }
+//     return x;
+// }
+// console.log(veremos(1000));
+
+// Escribí una función llamada elemento que recibe un arreglo
+// como parámetro. La función debe devolver el valor que se
+// encuentra en la tercera posición. Si el arreglo no tiene al menos
+// 3 elementos deberá retornar -1.
+
+// func elemto [] me tiene que devolver el valor que se encuentra en la tercera PromiseRejectionEvent
+
+let array = ["coco","caca","rigo","rosita"];
+function elemento(array){
+    array.length >=3 ? console.log(array[3]): console.log("-1");
+}
+elemento(array);
