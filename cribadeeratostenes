@@ -1,0 +1,18 @@
+
+
+
+let hasta = 120;
+let numeros = [];
+for(let i = 0; i < hasta; i++){
+    numeros[i] = i+1;
+}
+function quitarMultiplos(n,num) {
+    for(let i = 0; i <= num.length; i++){
+        if(num[i] % n == 0 && num[i]>n){
+            num.splice(i,1);
+        }
+    }
+    
+}
+quitarMultiplos(2,numeros);
+console.log(numeros);
