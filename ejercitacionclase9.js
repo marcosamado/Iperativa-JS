@@ -98,8 +98,47 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 // func elemto [] me tiene que devolver el valor que se encuentra en la tercera PromiseRejectionEvent
 
-let array = ["coco","caca","rigo","rosita"];
-function elemento(array){
-    array.length >=3 ? console.log(array[3]): console.log("-1");
+// let array = ["coco","caca","rigo","rosita"];
+// function elemento(array){
+//     array.length >=3 ? console.log(array[3]): console.log("-1");
+// }
+// elemento(array);
+
+// Se ingresa por teclado un número natural de hasta 2 cifras, si
+// tiene una cifra que muestre lo mínimo que le falta para ser un
+// número de 2 cifras; de lo contrario, que muestre lo mínimo que
+// le falta para ser un número de 3 cifras. Considerar que el
+// usuario ingresa números de hasta dos cifras.
+
+// --se ingresa el 1 hasta el 99 ---- si es de una cifra (de 1 a 9) que muestre lo que le falta ser 10-
+// si es desde 10 hasta 99 - lo que falta para 100
+
+// si el numero es entre 1-9 mostrame 10-el numero que ingreso
+// si el numero es entre 10 y 99 mostrame 100 - el numero
+
+// function mostrarNumero(x){
+//     if(x <=9 && x >=1) {
+//         console.log(10 - x);
+//     }else if (x >=10 && x <=99){
+//         console.log(100 - x);
+//     } else {
+//         console.log("ingresa un dato entre 1 y 99");
+//     }
+// }
+// mostrarNumero(9);
+
+// Hacer un algoritmo que muestre el promedio de varias
+// notas o de N notas ingresadas, se debe definir el valor de N
+// para conocer la cantidad de notas a ingresar.
+// X notas - 
+
+function promedio(notas){
+    let suma= 0;
+    let resultado;
+    for(let i = 1; i<= notas; i++){
+        suma = suma + Number(prompt("ingresa"));
+    }
+    resultado = suma/notas;
+    return resultado;
 }
-elemento(array);
+console.log(promedio(4));
