@@ -141,4 +141,4 @@ function promedio(notas){
     resultado = suma/notas;
     return resultado;
 }
-console.log(promedio(4));
+console.log(promedio(6));
