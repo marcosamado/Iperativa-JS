@@ -80,18 +80,19 @@ let banco = {
         }
     ],
     consultarCliente : function (nombre){
+        let clienteEncontrado;
         for (let i = 0; i <this.clientes.length; i++){
-            if(this.clientes.titularCuenta == nombre) {
-                return "encontrado";
-            }else{
-                return "No existe el cliente"
-            }
-        }
+            if(this.clientes[i].titularCuenta == nombre) {
+                clienteEncontrado = this.clientes[i];
+                return clienteEncontrado;
         }
     }
+    return "error";
+}
+}
 // Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá un
 // nombre (titular) por parámetro, deberá buscarlo en la lista de cuentas y retornar el
 // objeto cliente que corresponda con ese nombre ingresado.
 // Ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
 
-console.log(banco.consultarCliente("Jacki Shurmer"));
+console.log(banco.consultarCliente("Ansel Ardley"));

@@ -33,6 +33,10 @@ let peliculasAnimadas = ["toy story", "finding Nemo", "kung-fu panda", "wally", 
 peliculasMayusculas(peliculasAnimadas);
 console.log(peliculasAnimadas);
 
+// let concatenando = [];
+// concatenando = peliculas.concat(peliculasAnimadas);
+// console.log(concatenando);
+
 let todasLasPeliculas = [];
 function agregandoPelis(array1,array2){
     todasLasPeliculas = array1.concat(array2);
