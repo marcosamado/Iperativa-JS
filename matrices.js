@@ -19,7 +19,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 // }
 // console.log(suma(numeros));
 
-
+//*******  */
 
 // let matrizNueva = [];
 // let acumulador = 1;
@@ -61,47 +61,46 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ○ Hola soy lucas
 // ○ Hola soy camila
 
-let mice = [
-    ["lucas","camila","pedro"],
-    ["juan",  "luisa" , null]
-]
+// let mice = [
+//     ["lucas","camila","pedro"],
+//     ["juan",  "luisa" , null]
+// ]
 
-console.log(mice[1][1]);
+// console.log(mice[1][1]);
 
-mice[1][2] = "Jerry";
-console.log(mice);
+// mice[1][2] = "Jerry";
+// console.log(mice);
 
 
-function saludo(matriz){
-    for (let i = 0; i < matriz.length; i++) {
-        for (let j = 0; j < matriz[i].length; j++) {
-            console.log("Hola soy " + matriz[i][j]);
-        }
-    }
-}
-saludo(mice);
-
+// function saludo(matriz){
+//     for (let i = 0; i < matriz.length; i++) {
+//         for (let j = 0; j < matriz[i].length; j++) {
+//             console.log("Hola soy " + matriz[i][j]);
+//         }
+//     }
+// }
+// saludo(mice);
 
 
 // Function `printArray()` prints all the elements of a 2D array using nested for loops.
-let arr = [
-    [1, 2],
-    [3, 4],
-    [5, 6]
-        ];
+// let arr = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6]
+//         ];
 
-// printArray(arr) //  1 2 3 4 5 6
+// // printArray(arr) //  1 2 3 4 5 6
 
-function printArray(array){
-    let nuevoPrint = [];
-    for(let i = 0; i < array.length; i++){
-        for (let j = 0; j < array[i].length; j++) {
-            nuevoPrint.push(array[i][j]);
-        }
-    }
-    return nuevoPrint;
-}
-console.log(printArray(arr));
+// function printArray(array){
+//     let nuevoPrint = [];
+//     for(let i = 0; i < array.length; i++){
+//         for (let j = 0; j < array[i].length; j++) {
+//             nuevoPrint.push(array[i][j]);
+//         }
+//     }
+//     return nuevoPrint;
+// }
+// console.log(printArray(arr));
 
 
 // Function printPattern() is used to print a pattern for a given range using nested for loop.
@@ -109,10 +108,32 @@ console.log(printArray(arr));
 // printPatter(8);
 
 /* 1 
-   1 2 
-   1 2 3 
-   1 2 3 4 
-   1 2 3 4 5 
-   1 2 3 4 5 6 
-   1 2 3 4 5 6 7 
-   1 2 3 4 5 6 7 8 */
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+1 2 3 4 5 6 7 
+1 2 3 4 5 6 7 8 */
+
+
+function printPatter(param){
+    let piramide = " ";
+    for (let i = 1; i <= param; i++) {
+        piramide = " ";   
+        for (let j = 1; j <= i; j++) {
+            piramide = piramide + j + " ";
+        }
+        console.log(piramide);
+    }
+}
+(printPatter(8));
+
+function unFor(num){
+    let piramide = "";
+    for (let i = 1; i <= num; i++) {
+        piramide += i + " ";
+        console.log(piramide);
+    }
+}
+unFor(15);
