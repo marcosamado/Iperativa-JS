@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 
-let personas = [
+let gente = [
     {
     nombre: "Dua",
     apellido: "Lipa",
@@ -21,19 +21,19 @@ let personas = [
     estatura: 180
     }
 ];
-function ordenarEstatura(personas) {
-    for (let i = 0; i < personas.length; i++) {
-    for (let j = 0; j < personas.length - 1; j++) {
-        if (personas[j].estatura > personas[j + 1].estatura) {
-        let cont = personas[j];
-        personas[j] = personas[j + 1];
-        personas[j + 1] = cont;
+function ordenarEstatura(objeto,parametro) {
+    for (let i = 0; i < objeto.length; i++) {
+    for (let j = 0; j < objeto.length - 1; j++) {
+        if (objeto[j][parametro] > objeto[j + 1][parametro]) {
+        let cont = objeto[j];
+        objeto[j] = objeto[j + 1];
+        objeto[j + 1] = cont;
         }
     }
     }
 }
-ordenarEstatura(personas);
-console.log(personas);
+ordenarEstatura(gente, "estatura");
+console.log(gente);
 
 let matrizGastos = [
     [1135,2500,900,1600,2800,3650,1100],
@@ -46,16 +46,40 @@ let matrizGastos = [
 
 function gastoSemana(matriz,columna){
     let sumador = 0;
-    for(let i = columna; i < matriz[columna].length; i){
-        for(let j = 0; j < matriz[columna].length; j++){
-            sumador += matriz[i][j];
+            for(let j = 0; j < matriz[columna].length; j++){
+            sumador += matriz[columna][j];
             // console.log(sumador);
         }
         return sumador;
-    }
-}
+    };
 console.log(gastoSemana(matrizGastos,1));
 
 // b) La aplicación también tendrá una parte de estadísticas, para esto nos solicitan dar el total de un día en particular, por ejemplo del día 3, acá también tengamos en cuenta lo que ocurre con las filas, ya que las columnas también comienzan en 0.
+// buscar la semana elegida (indice) , buscar el dia 
+function gastoDia(semana,dia){
+    return matrizGastos[semana][dia];
+};
+console.log(gastoDia(0,1));
+// ------------------
+function gastoDiaDeMes(matriz,dia){
+    let sumador = 0;
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if(dia == j){
+                sumador += matriz[i][j];
+            }
+        }
+    }
+    return sumador;
+};
+console.log(gastoDiaDeMes(matrizGastos,3));
+
+let promedio = gastoDiaDeMes(matrizGastos,3) / matrizGastos.length;
+console.log(promedio);
+
+// c) Por último, es necesario tener el total de gastos realizados en el mes.
+
+
+
 
 
