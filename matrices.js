@@ -129,11 +129,11 @@ function printPatter(param){
 }
 (printPatter(8));
 
-function unFor(num){
-    let piramide = "";
-    for (let i = 1; i <= num; i++) {
-        piramide += i + " ";
-        console.log(piramide);
-    }
-}
-unFor(15);
+// function unFor(num){
+//     let piramide = "";
+//     for (let i = 1; i <= num; i++) {
+//         piramide += i + " ";
+//         console.log(piramide);
+//     }
+// }
+// unFor(10);
