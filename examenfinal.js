@@ -119,10 +119,13 @@ function columnaUno(matriz){
 };
 // console.log(columnaUno(matrizz));;
 
-function columnaUno(matriz){
+function columnaUno(matriz,nombreClave){
+    nuevoArreglo = [];
     for (let i = 0; i < matriz.length; i++) {
-        nuevoObjeto.numero = matriz[i][1];
-        console.log(nuevoObjeto);
+        objeto = {};
+        objeto[nombreClave] = (matriz[i][1]);
+        nuevoArreglo.push(objeto);
     }
+    return nuevoArreglo;
 };
-columnaUno(matrizz);;
+console.log(columnaUno(matrizz,"numero"));

@@ -116,9 +116,8 @@ const prompt = require("prompt-sync")({ sigint: true });
 1 2 3 4 5 6 7 
 1 2 3 4 5 6 7 8 */
 
-
 function printPatter(param){
-    let piramide = " ";
+    // let piramide = " ";
     for (let i = 1; i <= param; i++) {
         piramide = " ";   
         for (let j = 1; j <= i; j++) {
@@ -126,8 +125,9 @@ function printPatter(param){
         }
         console.log(piramide);
     }
+    return piramide;
 }
-(printPatter(8));
+(printPatter(20));
 
 // function unFor(num){
 //     let piramide = "";
