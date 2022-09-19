@@ -50,7 +50,7 @@ function buscarPais(arreglo,continente){
     }
     return paisConCopas;
 }
-// console.log(buscarPais(paises,"Sudamerica"));
+console.log(buscarPais(paises,"Sudamerica"));
 
 let arrayDeNumeros = [1, 2, 3, 8, 9, 104, 5, 6, 7, 15];
 
@@ -63,9 +63,9 @@ let arrayDeNumeros = [1, 2, 3, 8, 9, 104, 5, 6, 7, 15];
 // después de ejecutar la función.
 
 // funcion que reciba arrayDeNumeros y "asc" o "desc" y ordenar segun lo que el parametro, debo imprimir el array antes y despues
-
+console.log(arrayDeNumeros)
 function ordenandoArreglo(arreglo,ordenamiento){
-    console.log(arreglo)
+    // console.log(arreglo)
     for (let i = 0; i < arreglo.length; i++) {
         for (let j = 0; j < arreglo.length; j++) {
             if(arreglo[j] > arreglo[j+1] && ordenamiento == "asc"){
@@ -81,8 +81,8 @@ function ordenandoArreglo(arreglo,ordenamiento){
     }
     return arreglo;
 };
-// console.log(ordenandoArreglo(arrayDeNumeros,"desc"));
-// console.log(ordenandoArreglo(arrayDeNumeros,"asc"));
+console.log(ordenandoArreglo(arrayDeNumeros,"desc"));
+console.log(ordenandoArreglo(arrayDeNumeros,"asc"));
 
 // 1. Crear una matriz de 5 x 3
 // 2. Sumar todos los valores de las filas impares (considerando que la primera fila es la
@@ -108,7 +108,7 @@ function sumaFilaImpar(matriz){
     }
     return sumaImpares;
 };
-console.log(sumaFilaImpar(matrizz));
+// console.log(sumaFilaImpar(matrizz));
 
 function columnaUno(matriz){
     nuevoObjeto = {};
@@ -128,4 +128,4 @@ function columnaUno(matriz,nombreClave){
     }
     return nuevoArreglo;
 };
-console.log(columnaUno(matrizz,"numero"));
+// console.log(columnaUno(matrizz,"numero"));
