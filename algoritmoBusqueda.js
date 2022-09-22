@@ -12,7 +12,7 @@ let personas = [
     {
     id: 3,
     nombre: "Luis",
-    edad: 26
+    edad: 25
     },
     {
     id: 4,
@@ -62,28 +62,49 @@ function ordenar(arreglo,parametro){
 ordenar(personas,"edad");
 console.log(personas);
 
-function buscarNombre(arreglo,buscado){
-    let min = 0;
-    let max = arreglo.length -1;
+// function buscarNombre(arreglo,buscado){
+//     let min = 0;
+//     let max = arreglo.length -1;
 
+//     while (min <= max){
+//         let mid = Math.floor((min + max)/ 2);
+//         let adivinar = arreglo[mid].edad;
+//         if(adivinar === buscado){
+//             console.log(arreglo[mid].nombre); 
+//             return arreglo[mid].nombre;
+//         }
+//         if(adivinar > buscado){
+//             max = mid - 1;
+//         }else {
+//             min = mid + 1;
+//         }
+//     }
+// };
+
+
+function buscarNombre(arreglo,buscado){
+    let min =0;
+    let max = arreglo.length -1;
+    let buscados = [];
     while (min <= max){
         let mid = Math.floor((min + max)/ 2);
         let adivinar = arreglo[mid].edad;
         if(adivinar === buscado){
-            console.log(arreglo[mid].nombre); 
-            return arreglo[mid].nombre;
+            // console.log(arreglo[mid].nombre);
+            buscados.push(arreglo[mid].nombre);
         }
-        if(adivinar > buscado){
-            max = mid - 1;
-        }else {
-            min = mid + 1;
+        if (adivinar > buscado){
+            max = mid -1;
+        }else{
+            min = mid +1;
         }
     }
+    return buscados;
 };
 
-
-buscarNombre(personas,25) // Imprime  John
-buscarNombre(personas,76) // Imprime Marina
-buscarNombre(personas,16) // Imprime Dan
-buscarNombre(personas,15) // Imprime Ale
+console.log(buscarNombre(personas,25)) // Imprime  John
+console.log(buscarNombre(personas,76)) // Imprime Marina
+console.log(buscarNombre(personas,16)) // Imprime Dan
+console.log(buscarNombre(personas,15)) // Imprime Ale
 // Tip: Así como ordenaste una colección con Bubblesort, fijándote en una propiedad numérica, podrás aplicar el algoritmo de búsqueda binaria de la misma manera. Solo tendrás que identificar cuál es la propiedad numérica que te interesa para la búsqueda.
+
