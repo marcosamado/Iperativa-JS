@@ -45,7 +45,6 @@ console.log(buscarPais(paises,"Sudamérica",30000000));
 
 
 let arrayDeNumeros = [1,2,3, 8, 9, 104, 5, 6, 7, 15];
-
 // Crear una función llamada bubbleSort que reciba como parámetros el array y un string que represente el sentido de ordenamiento, la función deberá realizar un ordenamiento interno del array según el orden indicado 
 // “ASC” lo ordenará ascendente
 // “DESC” lo ordenará descendente
