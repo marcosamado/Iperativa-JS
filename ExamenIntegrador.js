@@ -100,3 +100,27 @@ function valoresPares(matrix){
 console.log(valoresPares(matriz));
 
 
+
+
+
+let lala = ["1, 3, 4, 7, 13",
+            "1, 2, 4, 13, 15"];
+
+
+function recorrer(matriz){
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            console.log(matriz[i][j])
+        }
+    }
+};
+recorrer(lala);
+
+let alvere = "Coderbyte";
+
+function reverso(param){
+    console.log(param.split("").reverse().join(""));
+};
+
+reverso(alvere);
+
