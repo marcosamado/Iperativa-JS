@@ -34,4 +34,22 @@ let numeros = [1,56,2,3,5,7,33]
     return Math.min(...args)
     };
 
-    console.log(findSmallestInt(numeros))
+    console.log(findSmallestInt(numeros));
+
+let dias = 6;
+
+function rentalCarCost(d) {
+    let x = 0;
+    switch (d >= x){
+        case d >=7:
+        return (d*40)- 50
+        break;
+        case d >=3 && d < 7:
+        return (d*40) - 20
+        break;
+        default :
+        return (d*40)
+    }
+};
+
+console.log(rentalCarCost(dias));
