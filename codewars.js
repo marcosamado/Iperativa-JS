@@ -53,3 +53,29 @@ function rentalCarCost(d) {
 };
 
 console.log(rentalCarCost(dias));
+
+let numero = 2394;
+
+// console.log(numero.toString())
+// console.log(parseInt(numero))
+
+
+function descendingOrder(n){
+    // let arreglo = n.split
+    // let arreglo1 = arreglo.sort((a,b) => a-b);
+    // console.log(arreglo1)
+    // return arreglo1.join();
+    
+return parseInt(n.toString().split("").sort().reverse().join(""));
+};
+
+console.log(descendingOrder(numero))
+
+
+let arreglo = [2,6,5,1,2,3];
+
+function minMax(arr){
+    return [Math.max(...arr), Math.min(...arr)]
+};
+
+console.log(minMax(arreglo));
