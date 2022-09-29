@@ -1,5 +1,5 @@
 
-let ciudad = "51NGAPORE"
+let ciudad = "51NGAP0RE"
 
 
 function correct(string){
@@ -8,10 +8,10 @@ function correct(string){
         if(string[i] == 0){
             newString = string.replaceAll(string[i],"O");
         }
-        else if(string[i] == 5){
+        if(string[i] == 5){
             newString = string.replaceAll(string[i], "S");
         }
-        else if(string[i] == 1){
+        if(string[i] == 1){
             newString = string.replaceAll(string[i], "I");
         }
     }
@@ -19,3 +19,19 @@ function correct(string){
 };
 console.log(correct(ciudad));
 
+
+let rata =  0.4167712762443887;
+
+function cockroachSpeed(s) {
+    let resultado = s * 27.76
+    return Math.floor(resultado);
+};
+
+// console.log(cockroachSpeed(rata))
+let numeros = [1,56,2,3,5,7,33]
+
+    function findSmallestInt(args) {
+    return Math.min(...args)
+    };
+
+    console.log(findSmallestInt(numeros))
