@@ -17,7 +17,7 @@ function correct(string){
     }
     return newString;
 };
-console.log(correct(ciudad));
+// console.log(correct(ciudad));
 
 
 let rata =  0.4167712762443887;
@@ -34,7 +34,7 @@ let numeros = [1,56,2,3,5,7,33]
     return Math.min(...args)
     };
 
-    console.log(findSmallestInt(numeros));
+    // console.log(findSmallestInt(numeros));
 
 let dias = 6;
 
@@ -52,7 +52,7 @@ function rentalCarCost(d) {
     }
 };
 
-console.log(rentalCarCost(dias));
+// console.log(rentalCarCost(dias));
 
 let numero = 2394;
 
@@ -69,7 +69,7 @@ function descendingOrder(n){
 return parseInt(n.toString().split("").sort().reverse().join(""));
 };
 
-console.log(descendingOrder(numero))
+// console.log(descendingOrder(numero))
 
 
 let arreglo = [2,6,5,1,2,3];
@@ -77,5 +77,52 @@ let arreglo = [2,6,5,1,2,3];
 function minMax(arr){
     return [Math.max(...arr), Math.min(...arr)]
 };
+// console.log(minMax(arreglo));
 
-console.log(minMax(arreglo));
+
+function removeSmallest(numbers) {
+    numbers = numbers.slice(0);
+    console.log(numbers)
+    const min = Math.min(...numbers);
+    numbers.splice(numbers.indexOf(min), 1);
+    return numbers;
+};
+// console.log(removeSmallest(arreglo));
+
+let arrCompuesto = [2,4,"4",6,"5",6];
+
+function sumMix(x){
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+        sum += parseInt(x[i]);
+    }
+    return sum;
+};
+console.log(sumMix(arrCompuesto));
+
+
+function getSum( a,b ){
+    let resultado = 0;
+    if(a===b){
+        return a;
+    }else if(b>a){
+    for(let i=a; i <= b; i++){
+    resultado = resultado + i
+    }
+    return resultado;
+    }else if(a>b){
+        for (let j = b; j <= a; j++) {
+            resultado = resultado + j
+        }
+    return resultado
+    }
+};
+// console.log(getSum(0,-1))
+
+
+const GetSum = (a, b) => {
+    let min = Math.min(a, b),
+    max = Math.max(a, b);
+    return (max - min + 1) * (min + max) / 2;
+}
+console.log(GetSum(0,-1));
