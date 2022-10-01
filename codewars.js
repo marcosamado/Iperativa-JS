@@ -126,3 +126,26 @@ const GetSum = (a, b) => {
     return (max - min + 1) * (min + max) / 2;
 }
 console.log(GetSum(0,-1));
+
+let palabrass = "rigol";
+
+function printerError(s) {
+    let count = 0;
+    for (let i = 0; i < s.length; i++) {
+        if(s[i] >= "n"){
+            count++
+        }
+    }
+    return count +"/"+ s.length;
+};
+// console.log(printerError(palabrass));
+
+
+function getMiddle(s){
+    if(s.length % 2 == 0){
+        return  s[s.length / 2 -1] + s[s.length / 2];
+    }else{
+        return (s[Math.floor(s.length / 2)]);
+    }
+};
+console.log(getMiddle(palabrass))
