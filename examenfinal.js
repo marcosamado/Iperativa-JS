@@ -53,6 +53,11 @@ function buscarPais(arreglo,continente){
 console.log(buscarPais(paises,"Sudamerica"));
 
 let arrayDeNumeros = [1, 2, 3, 8, 9, 104, 5, 6, 7, 15];
+                    2,10
+                    let contenedor = null;
+                    contenedor = arrayDeNumeros[j] 
+                    arrayDeNumero[j] = arrayDeNumeros[j+1]
+                    arrayDeNumeros[j+1] = contenedor;
 
 // Crear una función que reciba como parámetros el array y un string que
 // represente el sentido de ordenamiento, la función deberá realizar un
@@ -110,22 +115,22 @@ function sumaFilaImpar(matriz){
 };
 // console.log(sumaFilaImpar(matrizz));
 
-function columnaUno(matriz){
-    nuevoObjeto = {};
-    for (let i = 0; i < matriz.length; i++) {
-        nuevoObjeto["numero"+ " "+ i] = matriz[i][1];
-    }
-    return nuevoObjeto;
-};
+// function columnaUno(matriz){
+//     nuevoObjeto = {};
+//     for (let i = 0; i < matriz.length; i++) {
+//         nuevoObjeto["numero"+ " "+ i] = matriz[i][1];
+//     }
+//     return nuevoObjeto;
+// };
 // console.log(columnaUno(matrizz));;
 
 function columnaUno(matriz,nombreClave){
     nuevoArreglo = [];
     for (let i = 0; i < matriz.length; i++) {
         objeto = {};
-        objeto[nombreClave] = (matriz[i][1]);
+        objeto[nombreClave] = matriz[i][1];
         nuevoArreglo.push(objeto);
     }
     return nuevoArreglo;
 };
-// console.log(columnaUno(matrizz,"numero"));
+console.log(columnaUno(matrizz,"numero"));
