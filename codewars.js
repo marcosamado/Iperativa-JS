@@ -149,3 +149,28 @@ function getMiddle(s){
     }
 };
 // console.log(getMiddle(palabrass))
+
+
+const binaryArrayToNumber = arr => {
+    return parseInt(Number(arr.join('')), 2)
+};
+console.log(binaryArrayToNumber([1,0,1,1]))
+
+
+let matriz = [
+    [2,3,5],
+    [2,3,4],
+    [2,3,2]
+];
+
+function lala(matrizz){
+    for (let i = 0; i < matrizz.length; i++) {
+        for (let j = 0; j < matrizz[i].length; j++) {
+            if(matrizz[i][j] % 2 !== 0){
+                matrizz[i][j] = 0;
+            }
+        }
+    }
+    return matrizz;
+};
+console.log(lala(matriz));
