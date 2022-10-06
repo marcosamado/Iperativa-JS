@@ -125,7 +125,7 @@ const GetSum = (a, b) => {
     max = Math.max(a, b);
     return (max - min + 1) * (min + max) / 2;
 }
-console.log(GetSum(0,-1));
+// console.log(GetSum(0,-1));
 
 let palabrass = "rigol";
 
@@ -154,7 +154,7 @@ function getMiddle(s){
 const binaryArrayToNumber = arr => {
     return parseInt(Number(arr.join('')), 2)
 };
-console.log(binaryArrayToNumber([1,0,1,1]))
+console.log(binaryArrayToNumber([1,0,1,0]));
 
 
 let matriz = [
@@ -174,3 +174,21 @@ function lala(matrizz){
     return matrizz;
 };
 console.log(lala(matriz));
+
+let nombres = 1234;
+
+
+var myInt = 235345;
+
+let myFunc = num => Number(num);
+
+var intArr = Array.from(String(myInt), myFunc);
+
+
+
+var num = 235345
+
+var myArr = String(num).split("").map((num)=>{
+    Number(num*num)
+});
+(Number(myArr.join("")))
