@@ -191,4 +191,56 @@ var num = 235345
 var myArr = String(num).split("").map((num)=>{
     Number(num*num)
 });
-(Number(myArr.join("")))
+(Number(myArr.join("")));
+
+
+var summation = function (num) {
+    let sum = 0;
+    for(let i = 1; i <= num; i++){
+        sum = sum + i
+    }
+    return sum;
+};
+console.log(summation(8));
+
+let nom = "rigo y la rosita feos";
+
+function removeChar(str){
+    return nom.slice(1,-1)
+};
+console.log(removeChar(nom))
+
+// ["1","2","4","5"]
+let string = "1245";
+
+
+let array = string.split([,]);
+
+let arrayNum = array.map(str => {
+    return Number(str);
+});
+console.log(arrayNum);
+
+let matrizMadre = [];
+
+for (let i = 0; i < arrayNum.length; i++) {
+    let matrizHija = [];
+    for (let j = 0; j < arrayNum[i].length; j++) {
+        matrizHija.push(0)
+    }
+    matrizMadre.push(matrizHija);
+}
+console.log(matrizMadre);
+
+
+// function reloj(numero){
+//     let matriz = [];
+//     for (let i = 0; i < numero.length; i++) {
+//         for (let j = 0; j < numero.length; j++) {
+            
+//         }
+//     }
+//     return matriz;
+// }
+// reloj(arrayNum);
+
